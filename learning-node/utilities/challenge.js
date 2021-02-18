@@ -19,8 +19,8 @@ logger.info = function (str) {
 }
 
 
-logger.warn('Nah Webonah')
+logger.warn('Atención')
 
-logger.info('El')
+logger.info('Mensaje')
 
-logger.error('Mio')
+logger.error('Crítico')
