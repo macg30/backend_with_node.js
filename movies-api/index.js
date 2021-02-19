@@ -24,7 +24,6 @@ app.get('/check_leap_year/:year', function(req, res) {
         msg = `This year (${year}) is not a leap year`;
     }
     res.json({ res: msg});
-
 });
 
 app.listen(config.port,function() {
