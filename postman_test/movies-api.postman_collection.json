@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "2259eff3-0b10-46d0-bd46-420a9a5ba791",
+		"name": "movies-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Movie All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/movies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/movies/abc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"movies",
+						"abc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"lorem ipsum\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/movies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Other title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/movies/abc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"movies",
+						"abc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Movie",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"other title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/movies/abc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"movies",
+						"abc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
