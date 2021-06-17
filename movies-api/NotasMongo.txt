@@ -1,0 +1,10 @@
+mongodb://myDBReader:D1fficultP%40ssw0rd@mongodb0.example.com:27017/?authSource=admin
+
+mongodb://root:pass12345@127.0.0.1:3000/platzi?authSource=admin
+
+docker run -d \
+  -e MONGO_INITDB_ROOT_USERNAME=admin \
+  -e MONGO_INITDB_ROOT_PASSWORD=password \
+  mongod
+
+docker build -t mongodb
