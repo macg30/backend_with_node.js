@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index",
-    "start": "MODE_ENV=production node index",
+    "start": "node index",
     "debug": "nodemon --inspect index",
     "test": "mocha --exit"
   },
